@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="dk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AlbasHimmerige</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <!--Vi arbejder fra ventre mod højre og fra top til bund-->
+  <body>
+    <!--Navigationsfelt-->
+    <!--div=element-name : class=Attribute : Navbar=value-->
+
+    <div class="navbar">
+      <div class="container">
+        <a class="logo" href="index.html">Albas<span>Himmerige</span></a>
+        <!-- a er et link som gør AlbasHimmerige/logo til et link man kan klikke for at komme til forsiden
+                Span gør det mulig at give det indrammede ord en anden farve f.eks-->
+        <img
+          id="mobile-cta"
+          class="mobile-menu"
+          src="images/menu.svg"
+          alt="Åben navigaton"
+        />
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-menu-exit"
+            src="images/exit.svg"
+            alt="Luk navigation"
+          />
+          <!--primær navigation er navigationen til de andre sider (knapperne i toppen af hjemmesiden)-->
+          <ul class="primær-nav">
+            <li ><a href="index.html">Forside</a></li>
+            <li ><a href="behandling.html">Behandling</a></li>
+            <li><a href="hundepasning.html">Hundepasning</a></li>
+            <li class="current"li><a href="priser-regler.html">Priser og info</a></li>
+            
+          </ul>
+          <!--ul er et liste element hvor rækkefølgen ikke betyder noget-->
+         <ul class="sec-nav">
+          
+          <li class="kontakt-btn"><a href="mailto:AlbasHimmerige@hotmail.com">Kontakt</a></li>
+         </ul>
+        </nav>
+      </div>
+    </div>
+<div class="img-social"> 
+  <ul class="social-nav">
+            
+    <li>
+      <a href="https://www.facebook.com/Albashimmerige"
+        ><img class="face" src="images/icons8-facebook.svg" alt=""
+      /></a>
+    </li>
+  
+    <li>
+      <a href="https://www.instagram.com/albashimmerige/"
+        ><img class="insta" src="images/icons8-instagram.svg" alt=""
+      /></a>
+    </li>
+</ul>
+</div>
+    <section class="priser-main">
+      <div class="container">
+       
+        <div class="center-main">
+          
+      
+          <h1>Priser for KST-behandling</h1>
+         
+          <a class="priserher" href="hundepasning.html"
+          >Find priser på hundepasning her<img
+            src="images/dog-running-svgrepo-com.svg"
+            width="23px"
+            height="23px"
+            alt=""
+        /></a>
+         
+          <div class="row">
+            <div class="column">
+              <div class="card"><h3>Alder</h3><p>info info info info</p><p>78 kr</p></div>
+            </div>
+            <div class="column">
+              <div class="card"><h3>Alder</h3><p>info info info info</p><p>78 kr</p></div>
+            </div>
+            <div class="column">
+              <div class="card"><h3>Alder</h3><p>info info info info</p><p>78 kr</p></div>
+            </div>
+            <div class="column">
+              <div class="card"><h3>Alder</h3><p>info info info info</p><p>78 kr</p></div>
+            </div>
+            <div class="column">
+              <div class="card"><h3>Alder</h3><p>info info info info</p><p>78 kr</p></div>
+            </div>
+            <div class="column">
+              <div class="card"><h3>Alder</h3><p>info info info info</p><p>78 kr</p></div>
+            </div>
+            <div class="column">
+              <div class="card"><h3>s</h3><p>info info info info</p><p>78 kr</p></div>
+            </div>
+            <div class="column">
+              <div class="card"><h3>s</h3><p>info info info info</p><p>78 kr</p></div>
+            </div>
+            <div class="column">
+              <div class="card"><h3>special tilbud</h3><p>info info info info</p><p>78 kr</p></div>
+            </div>
+          </div>
+          <h2>Info</h2>
+          <ul class="priser-beskrivelse">
+            <li> Der er både mulighed for behandling hjemme hos mig og i dit eget
+              hjem.</li>
+              <li>Hunden må ikke gå til træning 48 timer efter behandling. </li>
+              <li>Er din hund blevet oppereret indenfor de sidste 2 månedner skal dyrlægen give grønt lys inden behandling. </li>
+              <li>Har din hund kræft må han/hun ikke få behandling. </li>
+              <li>Hunden må ikke gå til træning 48 timer efter behandling. </li>
+          </ul>
+        <h2 id="hpinfo">Info for hundepasning</h2>
+        <p>fhdjksfghdskjfh sjhf ljkh fsjf ljkf hlf sl l  </p>
+         
+         
+
+          
+    <script>
+      const mobileBtn = document.getElementById("mobile-cta");
+      nav = document.querySelector("nav");
+      mobileBtnExit = document.getElementById("mobile-exit");
+      mobileBtn.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+      });
+      mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+      });
+    </script>
+  </body>
+</html>

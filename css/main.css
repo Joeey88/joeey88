@@ -1,0 +1,770 @@
+@charset "UTF-8";
+/*root gør det nemt at skifte farven på alt der er grønt på en gang*/
+:root {
+  --primary-color: #7aa04c;
+  --secondary-color: #1f3647;
+  --White-color: rgb(240, 245, 255);
+}
+
+/*body er generelt hjemmeside udseene som baggrund og font type*/
+body {
+  background: var(--secondary-color);
+  margin: 0;
+  font-family: "Poppins";
+}
+
+.navbar {
+  background: white;
+  padding: 1.1em;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: var(--secondary-color);
+}
+
+.navbar .logo span {
+  color: #5598cb;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+  height: 14px;
+  padding-top: 4px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.img-social .insta,
+.img-social .face {
+  max-width: 50px;
+  max-height: 50px;
+  margin-right: 1em;
+  padding-top: 1em;
+  float: right;
+}
+
+.hero {
+  text-align: center;
+  margin: auto;
+  width: 90%;
+}
+
+.hero h1 {
+  color: var(--White-color);
+  font-size: 2em;
+  margin-top: 3.5em;
+}
+
+.hero .beskrivelse {
+  font-size: 1.1em;
+  text-align: left;
+  margin-top: 5em;
+  color: #5598cb;
+}
+
+.info-kst, .info-hp {
+  font-size: 1em;
+  margin-right: 1em;
+  color: var(--primary-color);
+}
+
+.info-kst img, .info-hp img {
+  vertical-align: text-bottom;
+  margin-left: 0.5em;
+  margin-top: 20px;
+  -webkit-filter: invert(59%) sepia(15%) saturate(1151%) hue-rotate(45deg) brightness(95%) contrast(96%);
+          filter: invert(59%) sepia(15%) saturate(1151%) hue-rotate(45deg) brightness(95%) contrast(96%);
+}
+
+.hero-cta {
+  text-align: left;
+}
+
+.hero-cta .hero-img {
+  width: 180px;
+  height: auto;
+  float: right;
+  border-radius: 20em;
+}
+
+.hero-cta .cta-tekst {
+  font-size: 1.5em;
+  margin-top: 7em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+  color: #ecf2ff;
+}
+
+.hero-cta .maila {
+  font-size: 1em;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--White-color);
+  font-weight: bold;
+  background: var(--primary-color);
+  padding: 0.5em;
+  border-radius: 50px;
+}
+
+.behandling-info .container {
+  text-align: center;
+  margin-top: 4em;
+  width: 100%;
+  background-color: #5598cb;
+}
+
+.behandling-info .container .behandling-head {
+  margin: 5%;
+  padding-top: 4em;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+.behandlings-liste {
+  margin-top: 3em;
+  padding-left: 0.7em;
+  padding-top: 3em;
+  padding-bottom: 2em;
+  -webkit-columns: 2;
+          columns: 2;
+  background-color: var(--primary-color);
+  border-radius: 50px;
+}
+
+@media only screen and (min-width: 775px) {
+  .behandlings-liste {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  }
+}
+
+.behandlings-liste li {
+  font-size: 1em;
+  margin-bottom: 3em;
+  margin-left: 3em;
+  margin-right: 3em;
+  position: relative;
+  font-weight: bold;
+}
+
+.behandlings-liste li:before {
+  content: "";
+  left: -6em;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-image: url("../images/dog-paw-svgrepo-com.svg");
+  background-size: contain;
+  margin-left: 4em;
+  -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(82deg) brightness(105%) contrast(105%);
+          filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(82deg) brightness(105%) contrast(105%);
+}
+
+.cases-section {
+  margin: auto;
+  width: 90%;
+  padding-top: 100px;
+}
+
+.cases-section li {
+  height: 300px;
+  padding: 10px 10px 10px 0px;
+}
+
+.cases-section li cite {
+  color: #f0f5ff;
+  font-size: auto;
+  -webkit-margin-start: 20px;
+          margin-inline-start: 20px;
+  top: 1em;
+}
+
+.cases-section li img {
+  border-radius: 10px;
+  float: left;
+  width: auto;
+  height: 300px;
+}
+
+.cases-section li blockquote {
+  color: #5598cb;
+  text-align: contain;
+  padding-left: 20px;
+  font-size: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav.menu.btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background-color: var(--primary-color);
+  height: 100vh;
+  padding: 1em;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .primær-nav {
+  margin-top: 3em;
+}
+
+nav a {
+  color: #f0f5ff;
+  font-size: 17px;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  text-align: right;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 700px) {
+  .hero {
+    text-align: left;
+  }
+  .hero h1 {
+    text-align: center;
+    font-size: 2.5em;
+  }
+  .hero .beskrivelse {
+    font-size: 1.3em;
+  }
+  .hero .info-kst, .hero .info-hp {
+    font-size: 1.1em;
+  }
+  .hero-cta .cta-tekst {
+    font-size: 1.6em;
+  }
+  .hero-cta .maila {
+    font-size: 1.5em;
+  }
+  .hero-cta .hero-img {
+    height: auto;
+    width: 230px;
+    margin-top: -4em;
+  }
+  .behandling-info .container {
+    text-align: left;
+  }
+  .behandling-info .container .behandling-head {
+    font-size: 2em;
+  }
+  .behandling-info .container .behandlings-liste {
+    font-size: 1.1em;
+  }
+  .cases-section li cite {
+    font-size: 1.2em;
+  }
+  .cases-section li blockquote {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .mobile-menu,
+  .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: 1em;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav ul li a {
+    color: #1f3647;
+    font-size: 17px;
+    padding: 0px 1em;
+  }
+  .navbar nav ul.primær-nav,
+  .navbar nav .sec-nav {
+    margin: 4px;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+  .navbar nav li.kontakt-btn a {
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    font-weight: bold;
+    border-radius: 5em;
+    margin-top: -3px;
+  }
+  .navbar nav li.kontakt-btn a:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  .hero-cta .hero-img {
+    height: auto;
+    width: 280px;
+    margin-top: -4em;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .navbar .logo {
+    font-size: 24px;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav ul li a {
+    color: #1f3647;
+    font-size: 20px;
+    padding: 0px 1em;
+  }
+  .navbar ul.primær-nav,
+  .navbar .sec-nav {
+    margin: 4px;
+  }
+  .navbar li.current a {
+    font-weight: bold;
+  }
+  .navbar li.kontakt-btn a {
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    font-weight: bold;
+    border-radius: 5em;
+    margin-top: -3px;
+  }
+  .navbar li.kontakt-btn a:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  .hero {
+    text-align: left;
+  }
+  .hero h1 {
+    font-size: 3em;
+  }
+  .hero .beskrivelse {
+    font-size: 1.4em;
+  }
+  .hero .info-kst, .hero .info-hp {
+    font-size: 1.2em;
+  }
+  .hero-cta .cta-tekst {
+    font-size: 1.8em;
+  }
+  .hero-cta .maila {
+    font-size: 1.7em;
+  }
+  .hero-cta .hero-img {
+    height: auto;
+    width: 400px;
+    margin-top: -7em;
+  }
+  .behandling-info .container {
+    text-align: left;
+  }
+  .behandling-info .container .behandling-head {
+    font-size: 2.2em;
+  }
+  .behandling-info .container .behandlings-liste {
+    font-size: 1.3em;
+  }
+  .cases-section li cite {
+    font-size: 1.3em;
+  }
+  .cases-section li blockquote {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero {
+    text-align: left;
+  }
+  .hero h1 {
+    font-size: 3.4em;
+    text-align: left;
+  }
+  .hero .beskrivelse {
+    font-size: 1.6em;
+  }
+  .hero .info-kst, .hero .info-hp {
+    font-size: 1.4em;
+  }
+  .hero-cta .cta-tekst {
+    font-size: 2em;
+  }
+  .hero-cta .maila {
+    font-size: 1.9em;
+  }
+  .hero-cta .hero-img {
+    height: auto;
+    float: right;
+    width: 500px;
+    margin-top: -16em;
+  }
+  .behandling-info .container {
+    text-align: left;
+  }
+  .behandling-info .container .behandling-head {
+    font-size: 2.3em;
+  }
+  .behandling-info .container .behandlings-liste {
+    font-size: 1.5em;
+  }
+  .cases-section li cite {
+    font-size: 1.5em;
+  }
+  .cases-section li blockquote {
+    font-size: 1.5em;
+  }
+}
+
+.behandling-main {
+  text-align: left;
+  margin: auto;
+  width: 90%;
+}
+
+.behandling-main .center-main h1 {
+  margin-top: 3em;
+  font-size: 3.2vmax;
+  color: var(--White-color);
+}
+
+.behandling-main .center-main .KST-beskrivelse {
+  color: #5598cb;
+  font-size: 1.7vmax;
+  margin-top: 2.7vmax;
+}
+
+.behandling-main .center-main .info-priser {
+  padding-bottom: 3em;
+  color: var(--primary-color);
+  font-size: 1.7vmax;
+}
+
+.behandling-main .center-main .info-priser img {
+  vertical-align: text-bottom;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  margin-top: 20px;
+  -webkit-filter: invert(59%) sepia(15%) saturate(1151%) hue-rotate(45deg) brightness(95%) contrast(96%);
+          filter: invert(59%) sepia(15%) saturate(1151%) hue-rotate(45deg) brightness(95%) contrast(96%);
+}
+
+.behandling-main .center-main h2 {
+  margin-top: 3em;
+  font-size: 2.8vmax;
+  color: var(--White-color);
+}
+
+.behandling-main .center-main .behandlings-gang {
+  color: #5598cb;
+  font-size: 1.7vmax;
+  margin-top: 2.7vmax;
+}
+
+.behandling-main .Alba-skov {
+  display: none;
+}
+
+.hundepasning-main {
+  text-align: left;
+  margin: auto;
+  width: 90%;
+}
+
+.hundepasning-main h1 {
+  margin-top: 3em;
+  font-size: 3.2vmax;
+  color: var(--White-color);
+}
+
+.hundepasning-main .hundepasning-beskrivelse {
+  color: #5598cb;
+  font-size: 1.8vmax;
+  margin-top: 2.8vmax;
+}
+
+.hundepasning-main .standard-pl {
+  margin-top: 3em;
+}
+
+.hundepasning-main .standard-pl ul li {
+  font-weight: bold;
+  font-size: 1.5vmax;
+  color: var(--primary-color);
+}
+
+.hundepasning-main .standard-pl ul li img {
+  vertical-align: text-bottom;
+  margin-right: 0.5em;
+  margin-top: 2em;
+  -webkit-filter: invert(59%) sepia(15%) saturate(1151%) hue-rotate(45deg) brightness(95%) contrast(96%);
+          filter: invert(59%) sepia(15%) saturate(1151%) hue-rotate(45deg) brightness(95%) contrast(96%);
+}
+
+.hundepasning-main h2 {
+  margin-top: 3em;
+  font-size: 3.2vmax;
+  color: var(--White-color);
+}
+
+.hundepasning-main .døgn-beskrivelse {
+  color: #5598cb;
+  font-size: 1.8vmax;
+  margin-top: 2.8vmax;
+}
+
+.hundepasning-main .døgn-pl {
+  margin-top: 3em;
+}
+
+.hundepasning-main .døgn-pl ul li {
+  font-weight: bold;
+  font-size: 1.5vmax;
+  color: var(--primary-color);
+}
+
+.hundepasning-main .døgn-pl ul li img {
+  vertical-align: text-bottom;
+  margin-right: 0.5em;
+  margin-top: 2em;
+  -webkit-filter: invert(59%) sepia(15%) saturate(1151%) hue-rotate(45deg) brightness(95%) contrast(96%);
+          filter: invert(59%) sepia(15%) saturate(1151%) hue-rotate(45deg) brightness(95%) contrast(96%);
+}
+
+.hundepasning-main .onsdag-beskrivelse {
+  color: #5598cb;
+  font-size: 1.8vmax;
+  margin-top: 2.8vmax;
+}
+
+.hundepasning-main .priser-hpl {
+  color: var(--primary-color);
+  font-size: 1.7vmax;
+}
+
+.hundepasning-main .priser-hpl img {
+  vertical-align: text-bottom;
+  margin-left: 0.5em;
+  margin-top: 20px;
+  -webkit-filter: invert(59%) sepia(15%) saturate(1151%) hue-rotate(45deg) brightness(95%) contrast(96%);
+          filter: invert(59%) sepia(15%) saturate(1151%) hue-rotate(45deg) brightness(95%) contrast(96%);
+}
+
+.hundepasning-main iframe {
+  margin-top: 3vw;
+  height: 60vmax;
+  width: 60vmax;
+}
+
+.priser-main {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+  margin: auto;
+  width: 90%;
+}
+
+.priser-main h1 {
+  margin-top: 3em;
+  font-size: 3.2vmax;
+  color: var(--White-color);
+}
+
+.priser-main .priserher {
+  color: var(--primary-color);
+  font-size: 1.7vmax;
+}
+
+.priser-main .priserher img {
+  vertical-align: text-bottom;
+  margin-left: 0.5em;
+  margin-top: 20px;
+  -webkit-filter: invert(59%) sepia(15%) saturate(1151%) hue-rotate(45deg) brightness(95%) contrast(96%);
+          filter: invert(59%) sepia(15%) saturate(1151%) hue-rotate(45deg) brightness(95%) contrast(96%);
+}
+
+.priser-main h2 {
+  margin-top: 3em;
+  margin-bottom: 2em;
+  font-size: 3.2vmax;
+  color: var(--White-color);
+}
+
+.priser-main .row {
+  padding-top: 6em;
+}
+
+.priser-main ul {
+  color: #5598cb;
+  font-size: 1.8vmax;
+  margin-bottom: 6em;
+}
+
+.priser-main ul li {
+  margin-top: 1em;
+  font-size: 1.8vmax;
+}
+
+.priser-main .column {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.priser-main .row {
+  margin: 0 -5px;
+}
+
+.priser-main .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.priser-main .card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: var(--White-color);
+  border-radius: 25px;
+}
+
+@media only screen and (min-width: 800px) {
+  .priser-main .column {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+  }
+  .behandling-main .subhead-kst {
+    color: var(--primary-color);
+    font-size: 1.2vmax;
+    margin-top: 2.5vmax;
+    margin-right: 52%;
+  }
+  .behandling-main .KST-beskrivelse {
+    margin-right: 52%;
+  }
+  .behandling-main .Alba-skov {
+    display: block;
+    float: right;
+    height: auto;
+    width: 45vmax;
+    margin-left: 1em;
+  }
+  .hundepasning-main .standard-pl {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  .hundepasning-main .standard-pl ul {
+    margin-left: 3em;
+  }
+  .hundepasning-main .standard-pl ul li {
+    margin-right: 2em;
+    font-weight: bold;
+    font-size: 1.3vmax;
+    color: var(--primary-color);
+  }
+  .hundepasning-main .døgn-pl {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  .hundepasning-main .døgn-pl ul {
+    margin-left: 3em;
+  }
+  .hundepasning-main .døgn-pl ul li {
+    margin-right: 2em;
+    font-weight: bold;
+    font-size: 1.3vmax;
+    color: var(--primary-color);
+  }
+  .kalender-main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  .kalender-main .onsdag-beskrivelse {
+    margin-right: 1em;
+  }
+  .kalender-main iframe {
+    margin-top: 3vw;
+    height: 35vmax;
+    width: 40vmax;
+  }
+}
+/*# sourceMappingURL=main.css.map */
