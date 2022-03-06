@@ -462,6 +462,13 @@ nav.menu-btn {
   width: 90%;
 }
 
+.behandling-main .center-main .subhead-kst {
+  color: var(--primary-color);
+  font-size: 1.2vmax;
+  margin-top: 2.5vmax;
+  margin-right: 52%;
+}
+
 .behandling-main .center-main h1 {
   margin-top: 3em;
   font-size: 3.2vmax;
@@ -682,12 +689,6 @@ nav.menu-btn {
     float: left;
     width: 30%;
     padding: 0 10px;
-  }
-  .behandling-main .subhead-kst {
-    color: var(--primary-color);
-    font-size: 1.2vmax;
-    margin-top: 2.5vmax;
-    margin-right: 52%;
   }
   .behandling-main .KST-beskrivelse {
     margin-right: 52%;
