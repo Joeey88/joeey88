@@ -657,12 +657,12 @@ nav.menu-btn {
   }
   ul{
     color: #5598cb;
-    font-size: 1.8vmax;
+    font-size: 1.7vmax;
     margin-bottom: 6em;
     
    li{
-     margin-top: 1em;
-     font-size: 1.8vmax;
+     margin-top: 1vmin;
+     font-size: 1vmax;
    }
   }
   .column {
@@ -671,7 +671,7 @@ nav.menu-btn {
     margin-bottom: 20px;
   }
   .row{
-    margin: 0 -5px;
+    margin: 0;
   }
  
   .row:after {

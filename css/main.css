@@ -647,13 +647,13 @@ nav.menu-btn {
 
 .priser-main ul {
   color: #5598cb;
-  font-size: 1.8vmax;
+  font-size: 1.7vmax;
   margin-bottom: 6em;
 }
 
 .priser-main ul li {
-  margin-top: 1em;
-  font-size: 1.8vmax;
+  margin-top: 1vmin;
+  font-size: 1vmax;
 }
 
 .priser-main .column {
@@ -663,7 +663,7 @@ nav.menu-btn {
 }
 
 .priser-main .row {
-  margin: 0 -5px;
+  margin: 0;
 }
 
 .priser-main .row:after {
