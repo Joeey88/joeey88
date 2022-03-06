@@ -132,31 +132,35 @@ ul {
     text-align: left;
     font-weight: bold;
     font-size: 1.8em;
+    
   }
+  
 }
 .behandlings-liste {
+   
   margin-top: 3em;
-
-  padding-left: 0.7em;
-  padding-top: 3em;
-  padding-bottom: 2em;
+  margin-bottom: 3em;
+text-align: left;
   columns: 2;
-
+  padding: 3em 1em;
   background-color: var(--primary-color);
-  border-radius: 50px;
+  border-radius: 25px;
 
+  
   @media only screen and(min-width: 775px) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    
   }
 
   li {
-    font-size: 1em;
-    margin-bottom: 3em;
+    margin-top: 2em;
+   
+    
     margin-left: 3em;
-    margin-right: 3em;
+    
     position: relative;
-
+    font-size: 2.5vmin;
     font-weight: bold;
 
     &:before {
@@ -167,8 +171,8 @@ ul {
       height: 26px;
       background-image: url("../images/dog-paw-svgrepo-com.svg");
       background-size: contain;
-      margin-left: 4em;
-
+      margin-left: 3em;
+    
       filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(82deg)
         brightness(105%) contrast(105%);
     }
@@ -196,7 +200,7 @@ width: 15vmax;
     } 
 blockquote{
   color: #5598cb;
-  font-size: 3vmin;
+  font-size: 3.3vmin;
   padding-left: 1em;
   display: flex;
  }
@@ -405,9 +409,7 @@ nav.menu-btn {
     .behandling-head {
       font-size: 2.2em;
     }
-    .behandlings-liste {
-      font-size: 1.3em;
-    }
+    
   }
   
 }
@@ -444,9 +446,7 @@ nav.menu-btn {
     .behandling-head {
       font-size: 2.3em;
     }
-    .behandlings-liste {
-      font-size: 1.5em;
-    }
+    
   }
   
 }
