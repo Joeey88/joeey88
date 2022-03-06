@@ -613,6 +613,9 @@ nav.menu-btn {
   text-align: left;
   margin: auto;
   width: 90%;
+  /* Remove extra left and right margins, due to padding in columns */
+  /* Style the counter cards */
+  /* Responsive columns - one column layout (vertical) on small screens */
 }
 
 .priser-main h1 {
@@ -641,55 +644,51 @@ nav.menu-btn {
   color: var(--White-color);
 }
 
-.priser-main .row {
-  padding-top: 6em;
-}
-
-.priser-main ul {
+.priser-main .priser-beskrivelse {
   color: #5598cb;
-  font-size: 1.7vmax;
+  font-size: 4vmin;
   margin-bottom: 6em;
 }
 
-.priser-main ul li {
+.priser-main .priser-beskrivelse li {
   margin-top: 1vmin;
-  font-size: 1vmax;
+  font-size: 2vmax;
 }
 
 .priser-main .column {
+  float: left;
   width: 100%;
-  display: block;
-  margin-bottom: 20px;
+  height: auto;
+  padding: 10px;
 }
 
 .priser-main .row {
-  margin: 0;
-}
-
-.priser-main .row:after {
-  content: "";
-  display: table;
-  clear: both;
+  margin: 0 -8px;
 }
 
 .priser-main .card {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
   /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-color: var(--White-color);
+  background-color: #f1f1f1;
   border-radius: 25px;
 }
 
 @media only screen and (min-width: 800px) {
-  .priser-main .column {
-    float: left;
-    width: 30%;
-    padding: 0 10px;
+  .priser-main .row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
   }
+  .priser-main .card {
+    margin: 1em;
+  }
+}
+
+@media only screen and (min-width: 800px) {
   .behandling-main .KST-beskrivelse {
     margin-right: 52%;
   }
