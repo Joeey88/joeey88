@@ -572,7 +572,7 @@ nav.menu-btn {
     }
   }
 
-  //pasningside overskrift 2
+  //pasningside overskrift 2 døgnpasning
   //den her styre også overskriften til minihundehaven (h2)
 
   h2 {
@@ -580,10 +580,14 @@ nav.menu-btn {
     font-size: 3.2vmax;
     color: var(--White-color);
   }
+  
   .døgn-beskrivelse {
     color: #5598cb;
     font-size: 1.8vmax;
     margin-top: 2.8vmax;
+    span{
+      color: #7aa04c;
+    }
   }
 
   //Døgn pasnings liste
