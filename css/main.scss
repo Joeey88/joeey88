@@ -178,32 +178,27 @@ ul {
 .cases-section {
   margin: auto;
   width: 90%;
-  padding-top: 100px;
-
-  li {
-    height: 300px;
-    padding: 10px 10px 10px 0px;
-
-    cite {
-      color: rgb(240, 245, 255);
-      font-size: auto;
-      margin-inline-start: 20px;
-      top: 1em;
+  padding-top: 4em;
+  li{
+    overflow: hidden;
+    margin-top: 3vmax;
+    cite{
+      color: var(--White-color);
+      margin-inline-start: 20px; 
+      font-size: 2vmax;
+      
     }
-    img {
-      border-radius: 10px;
+    img{
       float: left;
-      width: auto;
-      height: 300px;
-    }
+     border-radius: 15px;
 
-    blockquote {
-      color: #5598cb;
-      text-align: contain;
-      padding-left: 20px;
-      font-size: 17px;
-      display: flex;
-    }
+    } 
+blockquote{
+  color: #5598cb;
+  
+  padding-left: 1em;
+  display: flex;
+ }
   }
 }
 nav.menu.btn {
@@ -282,16 +277,7 @@ nav.menu-btn {
       font-size: 1.1em;
     }
   }
-  .cases-section {
-    li {
-      cite {
-        font-size: 1.2em;
-      }
-      blockquote {
-        font-size: 1.1em;
-      }
-    }
-  }
+  
 }
 @media only screen and(min-width: 800px) {
   .mobile-menu,
@@ -422,16 +408,7 @@ nav.menu-btn {
       font-size: 1.3em;
     }
   }
-  .cases-section {
-    li {
-      cite {
-        font-size: 1.3em;
-      }
-      blockquote {
-        font-size: 1.3em;
-      }
-    }
-  }
+  
 }
 @media only screen and(min-width: 1200px) {
   .hero {
@@ -470,16 +447,7 @@ nav.menu-btn {
       font-size: 1.5em;
     }
   }
-  .cases-section {
-    li {
-      cite {
-        font-size: 1.5em;
-      }
-      blockquote {
-        font-size: 1.5em;
-      }
-    }
-  }
+  
 }
 
 //behandling

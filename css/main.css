@@ -184,34 +184,29 @@ ul {
 .cases-section {
   margin: auto;
   width: 90%;
-  padding-top: 100px;
+  padding-top: 4em;
 }
 
 .cases-section li {
-  height: 300px;
-  padding: 10px 10px 10px 0px;
+  overflow: hidden;
+  margin-top: 3vmax;
 }
 
 .cases-section li cite {
-  color: #f0f5ff;
-  font-size: auto;
+  color: var(--White-color);
   -webkit-margin-start: 20px;
           margin-inline-start: 20px;
-  top: 1em;
+  font-size: 2vmax;
 }
 
 .cases-section li img {
-  border-radius: 10px;
   float: left;
-  width: auto;
-  height: 300px;
+  border-radius: 15px;
 }
 
 .cases-section li blockquote {
   color: #5598cb;
-  text-align: contain;
-  padding-left: 20px;
-  font-size: 17px;
+  padding-left: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,12 +291,6 @@ nav.menu-btn {
     font-size: 2em;
   }
   .behandling-info .container .behandlings-liste {
-    font-size: 1.1em;
-  }
-  .cases-section li cite {
-    font-size: 1.2em;
-  }
-  .cases-section li blockquote {
     font-size: 1.1em;
   }
 }
@@ -432,12 +421,6 @@ nav.menu-btn {
   .behandling-info .container .behandlings-liste {
     font-size: 1.3em;
   }
-  .cases-section li cite {
-    font-size: 1.3em;
-  }
-  .cases-section li blockquote {
-    font-size: 1.3em;
-  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -473,12 +456,6 @@ nav.menu-btn {
     font-size: 2.3em;
   }
   .behandling-info .container .behandlings-liste {
-    font-size: 1.5em;
-  }
-  .cases-section li cite {
-    font-size: 1.5em;
-  }
-  .cases-section li blockquote {
     font-size: 1.5em;
   }
 }
