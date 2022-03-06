@@ -81,7 +81,7 @@ ul {
 }
 
 .info-kst, .info-hp {
-  font-size: 1em;
+  font-size: 3vmin;
   margin-right: 1em;
   color: var(--primary-color);
 }
@@ -184,7 +184,7 @@ ul {
 .cases-section {
   margin: auto;
   width: 90%;
-  padding-top: 4em;
+  padding: 4em 0;
 }
 
 .cases-section li {
@@ -196,16 +196,19 @@ ul {
   color: var(--White-color);
   -webkit-margin-start: 20px;
           margin-inline-start: 20px;
-  font-size: 2vmax;
+  font-size: 4vmin;
 }
 
 .cases-section li img {
   float: left;
   border-radius: 15px;
+  height: auto;
+  width: 15vmax;
 }
 
 .cases-section li blockquote {
   color: #5598cb;
+  font-size: 3vmin;
   padding-left: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
