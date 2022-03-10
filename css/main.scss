@@ -4,19 +4,22 @@
   --secondary-color: #1f3647;
   --White-color: rgb(240, 245, 255);
 }
-/*body er generelt hjemmeside udseene som baggrund og font type*/
+/*body er generel hjemmeside udseene som baggrund og font type*/
 body {
   background: var(--secondary-color);
   margin: 0;
   font-family: "Poppins";
 }
-
+//baggrunds farve hvid og padding på 1.1em. padding tilføjer afstand inden i et element 
+// hvor margin tilføjer afstand udenfor, en af de største forskelle er at margins bliver slået sammen 
+// så 2 elementer med 2px margin vil altid være 2px fra hinanden, hvorimod 2 elementer med padding på 2px vil blive 4px fra hinanden 
 .navbar {
   background: white;
   padding: 1.1em;
 
   .logo {
     text-decoration: none;
+    //font weight kan også ændres til tal f.eks hvis man henter en font fra google-fonts er det en god ide at hente 2-3 font størrelser, som typisk er vist med tal
     font-weight: bold;
     font-size: 1.3em;
     color: var(--secondary-color);
@@ -67,7 +70,7 @@ ul {
 
   .beskrivelse {
     font-size: 1.1em;
-    text-align: left;
+    text-align: center;
 
     margin-top: 5em;
 
@@ -99,7 +102,7 @@ ul {
     border-radius: 20em;
   }
   .cta-tekst {
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-top: 7em;
     font-weight: bold;
     margin-bottom: 1.5em;
@@ -125,7 +128,7 @@ ul {
   margin-top: 4em;
   width: 100%;
   background-color: #5598cb;
-
+  
   .behandling-head {
     margin: 5%;
     padding-top: 4em;
@@ -135,28 +138,28 @@ ul {
     
   }
   
-}
-.behandlings-liste {
-   
+
+ul {
+  display: flexbox;
+  flex-wrap: wrap;
   margin-top: 3em;
   margin-bottom: 3em;
 text-align: left;
-  columns: 2;
+  
   padding: 3em 1em;
   background-color: var(--primary-color);
   border-radius: 25px;
-
-  
-  @media only screen and(min-width: 775px) {
+  @media only screen and(min-width: 700px) {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-    
+    grid-template-columns: 50% 50%;
   }
+  
+ 
 
   li {
     margin-top: 2em;
-   
     
+   
     margin-left: 3em;
     
     position: relative;
@@ -172,13 +175,13 @@ text-align: left;
       background-image: url("../images/dog-paw-svgrepo-com.svg");
       background-size: contain;
       margin-left: 3em;
-    
+     
       filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(82deg)
         brightness(105%) contrast(105%);
     }
   }
 }
-
+}
 .cases-section {
   margin: auto;
   width: 90%;
@@ -200,7 +203,7 @@ width: 15vmax;
     } 
 blockquote{
   color: #5598cb;
-  font-size: 3.3vmin;
+  font-size: 3vmin;
   padding-left: 1em;
   display: flex;
  }
@@ -254,6 +257,7 @@ nav.menu-btn {
     }
     .beskrivelse {
       font-size: 1.3em;
+      text-align: left;
     }
     .info-kst, .info-hp {
       
@@ -284,7 +288,7 @@ nav.menu-btn {
   }
   
 }
-@media only screen and(min-width: 800px) {
+@media only screen and(min-width: 900px) {
   .mobile-menu,
   .mobile-menu-exit {
     display: none;
@@ -386,6 +390,7 @@ nav.menu-btn {
     }
     .beskrivelse {
       font-size: 1.4em;
+      text-align: left;
     }
     .info-kst, .info-hp {
       font-size: 1.2em;
@@ -422,6 +427,7 @@ nav.menu-btn {
     }
     .beskrivelse {
       font-size: 1.6em;
+      text-align: left;
     }
     .info-kst, .info-hp {
       font-size: 1.4em;

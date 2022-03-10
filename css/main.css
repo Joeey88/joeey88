@@ -6,7 +6,7 @@
   --White-color: rgb(240, 245, 255);
 }
 
-/*body er generelt hjemmeside udseene som baggrund og font type*/
+/*body er generel hjemmeside udseene som baggrund og font type*/
 body {
   background: var(--secondary-color);
   margin: 0;
@@ -75,7 +75,7 @@ ul {
 
 .hero .beskrivelse {
   font-size: 1.1em;
-  text-align: left;
+  text-align: center;
   margin-top: 5em;
   color: #5598cb;
 }
@@ -106,7 +106,7 @@ ul {
 }
 
 .hero-cta .cta-tekst {
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin-top: 7em;
   font-weight: bold;
   margin-bottom: 1.5em;
@@ -139,27 +139,28 @@ ul {
   font-size: 1.8em;
 }
 
-.behandlings-liste {
+.behandling-info .container ul {
+  display: flexbox;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 3em;
   margin-bottom: 3em;
   text-align: left;
-  -webkit-columns: 2;
-          columns: 2;
   padding: 3em 1em;
   background-color: var(--primary-color);
   border-radius: 25px;
 }
 
-@media only screen and (min-width: 775px) {
-  .behandlings-liste {
+@media only screen and (min-width: 700px) {
+  .behandling-info .container ul {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
   }
 }
 
-.behandlings-liste li {
+.behandling-info .container ul li {
   margin-top: 2em;
   margin-left: 3em;
   position: relative;
@@ -167,7 +168,7 @@ ul {
   font-weight: bold;
 }
 
-.behandlings-liste li:before {
+.behandling-info .container ul li:before {
   content: "";
   left: -6em;
   position: absolute;
@@ -207,7 +208,7 @@ ul {
 
 .cases-section li blockquote {
   color: #5598cb;
-  font-size: 3.3vmin;
+  font-size: 3vmin;
   padding-left: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,6 +272,7 @@ nav.menu-btn {
   }
   .hero .beskrivelse {
     font-size: 1.3em;
+    text-align: left;
   }
   .hero .info-kst, .hero .info-hp {
     font-size: 1.1em;
@@ -297,7 +299,7 @@ nav.menu-btn {
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
   .mobile-menu,
   .mobile-menu-exit {
     display: none;
@@ -399,6 +401,7 @@ nav.menu-btn {
   }
   .hero .beskrivelse {
     font-size: 1.4em;
+    text-align: left;
   }
   .hero .info-kst, .hero .info-hp {
     font-size: 1.2em;
@@ -432,6 +435,7 @@ nav.menu-btn {
   }
   .hero .beskrivelse {
     font-size: 1.6em;
+    text-align: left;
   }
   .hero .info-kst, .hero .info-hp {
     font-size: 1.4em;
