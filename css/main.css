@@ -80,13 +80,15 @@ ul {
   color: #5598cb;
 }
 
-.info-kst, .info-hp {
+.info-kst,
+.info-hp {
   font-size: 3vmin;
   margin-right: 1em;
   color: var(--primary-color);
 }
 
-.info-kst img, .info-hp img {
+.info-kst img,
+.info-hp img {
   vertical-align: text-bottom;
   margin-left: 0.5em;
   margin-top: 20px;
@@ -274,7 +276,8 @@ nav.menu-btn {
     font-size: 1.3em;
     text-align: left;
   }
-  .hero .info-kst, .hero .info-hp {
+  .hero .info-kst,
+  .hero .info-hp {
     font-size: 1.1em;
   }
   .hero-cta .cta-tekst {
@@ -403,7 +406,8 @@ nav.menu-btn {
     font-size: 1.4em;
     text-align: left;
   }
-  .hero .info-kst, .hero .info-hp {
+  .hero .info-kst,
+  .hero .info-hp {
     font-size: 1.2em;
   }
   .hero-cta .cta-tekst {
@@ -437,7 +441,8 @@ nav.menu-btn {
     font-size: 1.6em;
     text-align: left;
   }
-  .hero .info-kst, .hero .info-hp {
+  .hero .info-kst,
+  .hero .info-hp {
     font-size: 1.4em;
   }
   .hero-cta .cta-tekst {
@@ -617,19 +622,16 @@ nav.menu-btn {
   text-align: left;
   margin: auto;
   width: 90%;
-  /* Remove extra left and right margins, due to padding in columns */
-  /* Style the counter cards */
-  /* Responsive columns - one column layout (vertical) on small screens */
 }
 
-.priser-main h1 {
+.priser-main .col h1 {
   margin-top: 3em;
   font-size: 3.2vmax;
   color: var(--White-color);
 }
 
-.priser-main .priserher {
-  font-size: 1.5em;
+.priser-main .col .priserher {
+  font-size: 2vmax;
   text-decoration: none;
   text-transform: none;
   color: black;
@@ -637,12 +639,10 @@ nav.menu-btn {
   margin-left: 0.7em;
   background: #7aa04c;
   padding: 0.5em;
-  margin-bottom: 2em;
-  margin-top: 2em;
   border-radius: 50px;
 }
 
-.priser-main .priserher img {
+.priser-main .col .priserher img {
   vertical-align: text-bottom;
   margin-left: 0.5em;
   margin-top: 20px;
@@ -650,37 +650,33 @@ nav.menu-btn {
           filter: invert(59%) sepia(15%) saturate(1151%) hue-rotate(45deg) brightness(95%) contrast(96%);
 }
 
-.priser-main h2 {
+.prisliste {
   margin-top: 3em;
-  margin-bottom: 2em;
-  font-size: 3.2vmax;
-  color: var(--White-color);
 }
 
-.priser-main .priser-beskrivelse {
-  color: #5598cb;
-  font-size: 4vmin;
-  margin-bottom: 6em;
-}
-
-.priser-main .priser-beskrivelse li {
-  margin-top: 1vmin;
-  font-size: 2vmax;
-}
-
-.priser-main .column {
+.prisliste .column {
   float: left;
-  margin-top: 3em;
   width: 100%;
   height: auto;
   padding: 10px;
 }
 
-.priser-main .row {
+.prisliste .column .lastcard {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: var(--White-color);
+  border-radius: 25px;
+  margin-bottom: 4em;
+}
+
+.prisliste .row {
   margin: 0 -8px;
 }
 
-.priser-main .card {
+.prisliste .card {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   /* this adds the "card" effect */
@@ -690,38 +686,66 @@ nav.menu-btn {
   border-radius: 25px;
 }
 
-.priser-main h3 {
+.prisliste h3 {
   font-weight: bold;
-  font-size: 2em;
+  font-size: 4vmin;
 }
 
-.priser-main .p2 {
-  font-size: 1.5em;
+.prisliste .p2 {
+  font-size: 3vmin;
   font-style: italic;
-  margin-top: -25px;
+  margin-top: -20px;
 }
 
-.priser-main p {
-  font-size: 2em;
+.prisliste p {
+  font-size: 4vmin;
 }
 
-.priser-main p span {
+.prisliste p span {
   font-weight: bold;
   font-size: 1em;
 }
 
-@media only screen and (min-width: 800px) {
-  .priser-main .row {
+@media only screen and (min-width: 850px) {
+  .prisliste .row {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
   }
-  .priser-main .card {
+  .prisliste .card {
     margin: 1em;
   }
 }
 
+.info-behandling {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+  margin: auto;
+  width: 90%;
+}
+
+.info-behandling .infoheader, .info-behandling .hp-info {
+  margin-top: 2em;
+  font-size: 3.2vmax;
+  color: var(--White-color);
+}
+
+.info-behandling .info-beskrivelse1 {
+  color: #5598cb;
+  font-size: 1.8vmax;
+  margin-top: 2.8vmax;
+}
+
+.info-behandling .info-beskrivelse2 {
+  color: #5598cb;
+  font-size: 1.8vmax;
+  margin-top: 2.8vmax;
+  margin-bottom: 6em;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
 @media only screen and (min-width: 800px) {
   .behandling-main .KST-beskrivelse {
     margin-right: 52%;

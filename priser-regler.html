@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--extentions used Live server, Live sass compiler og Prettier- code formatter-->
 <html lang="dk">
   <head>
     <meta charset="UTF-8" />
@@ -17,7 +18,11 @@
       <div class="container">
         <a class="logo" href="index.html">Albas<span>Himmerige</span></a>
         <!-- a er et link som gør AlbasHimmerige/logo til et link man kan klikke for at komme til forsiden
-                Span gør det mulig at give det indrammede ord en anden farve f.eks-->
+                Span gør det muligt at give det indrammede ord en anden farve f.eks-->
+
+        <!--Hamburger-menu og exit, er typisk brugt til navigations feltet på smartphones
+        de er sat ind som svg filer(scalable vector graphics) hvilket er en form for billed-code som gør det 
+        muligt at at scalere op og ned uden at miste kvaliteten på billedet-->
         <img
           id="mobile-cta"
           class="mobile-menu"
@@ -34,46 +39,49 @@
           <!--primær navigation er navigationen til de andre sider (knapperne i toppen af hjemmesiden)-->
           <ul class="primær-nav">
             <li ><a href="index.html">Forside</a></li>
-            <li ><a href="behandling.html">Behandling</a></li>
+            <li><a href="behandling.html">Behandling</a></li>
             <li><a href="hundepasning.html">Hundepasning</a></li>
-            <li class="current"li><a href="priser-regler.html">Priser og info</a></li>
-            
+            <li class="current"><a href="priser-regler.html">Priser og info</a></li>
           </ul>
-          <!--ul er et liste element hvor rækkefølgen ikke betyder noget-->
-         <ul class="sec-nav">
-          
-          <li class="kontakt-btn"><a href="Mailto:Regine@albashimmerige.dk">Kontakt</a></li>
-         </ul>
+          <!--sec-nav er den anden halvdel af knapperne i toppen, indeholder ofte en form for cta(call to action) knap i dette tilfælde "Kontakt"
+        som vil gøres mere fremtrædene i css-->
+          <ul class="sec-nav">
+            <li class="kontakt-btn">
+              <a href="Mailto:Regine@albashimmerige.dk">Kontakt</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </div>
-<div class="img-social"> 
-  <ul class="social-nav">
-            
-    <li>
-      <a href="https://www.facebook.com/Albashimmerige"
-        ><img class="face" src="images/icons8-facebook.svg" alt=""
-      /></a>
-    </li>
+    <!--links til de sociale medier-->
+    <div class="img-social">
+      <ul class="social-nav">
+        <li>
+          <a href="https://www.facebook.com/Albashimmerige"
+            ><img class="face" src="images/icons8-facebook.svg" alt=""
+          /></a>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/albashimmerige/"
+            ><img class="insta" src="images/icons8-instagram.svg" alt=""
+          /></a>
+        </li>
+      </ul>
+    </div>
   
-    <li>
-      <a href="https://www.instagram.com/albashimmerige/"
-        ><img class="insta" src="images/icons8-instagram.svg" alt=""
-      /></a>
-    </li>
-</ul>
-</div>
     <section class="priser-main">
       <div class="container">
-       
-        <div class="center-main">
-          
-      
-          <h1>Priser for KST-behandling</h1>
+        <div class="col">
          
+          <h1>Priser for KST-behandling</h1>
+
           <a class="priserher" href="hundepasning.html"
           >Find priser på hundepasning her</a>
-         <!--meget tekst og <br> får "cardsne" til at hoppe rundt pga størrelses forskel-->
+
+
+            <!--meget tekst og <br> får "cardsne" til at hoppe rundt pga størrelses forskel-->
+         <div class="prisliste">
           <div class="row">
             <div class="column">
               <div class="card"><h3>Hvalpekuld (15 min. pr. hvalp) </h3> <p> Pr. snude <span>100 kr. </span> </p></div>
@@ -91,35 +99,42 @@
               <div class="card"><h3> Senior over 9 år (60 min.)</h3><p> Opstarts-behandling<span> 750 kr.</span></p> <p>Efterfølgende <span> 650 kr.</span> </p></div>
             </div>
             <div class="column">
-              <div class="card"><h3> Spcielt senior tilbud (9+) </h3> <p class="p2">Gælder kun for hunde der har fået 6 behandlinger.</p><p> Vedligeholdeses behandling (30min.)<span> <br> <br> 300 kr. efter behov</span></p> </div>
+              <div class="lastcard"><h3> Spcielt senior tilbud (9+) </h3> <p class="p2">Gælder kun for hunde der har fået 6 behandlinger.</p><p> Vedligeholdeses behandling (30min.)<span> <br> <br> 300 kr. efter behov</span></p> </div>
             </div>
-           
-          </div>
-          <div class="infoside">
-            <h2>Info</h2>
-          <ul class="priser-beskrivelse">
-            <li> Der er både mulighed for behandling hjemme hos mig og i dit eget
-              hjem.</li>
-              <li>Hunden må ikke gå til træning 48 timer efter behandling. </li>
-              <li>Er din hund blevet oppereret indenfor de sidste 2 månedner skal dyrlægen give grønt lys inden behandling. </li>
-              <li>Har din hund kræft må han/hun ikke få behandling. </li>
-              <li>Hunden må ikke gå til træning 48 timer efter behandling. </li>
-          </ul>
-        <h2 id="hpinfo">Info for hundepasning</h2>
-        <ul class="priser-beskrivelse">
-          <li> Den første gang din hund bliver passet, skal din hund have sit tæppet/kurv med og sin yndlinges godbidder.</li>
-            <li>Efter min vurdering har jeg til enhver ret til afvise hund til pasning.</li>
-            <li>Er din hund passet fast her, hvis din hunds adfærd ændrer sig til uhensigtsmæssigt, har jeg til enhver tid opsige hund til pasning her. </li>
-            <li>Er din hund tidligere passet her, og blev opsagt på et tidspunkt, er velkommen til indkøringsprøve igen. </li>
-            <li>Tæver i løbetid anbefales at blive hjemme, halvanden uger op til løbetid og halvanden uger efter endt løbetid. </li>
-        </ul>
-        
-          </div>
-          
-         
-         
 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <section class="info-behandling">
+      <div class="container">
+        <h2 class="infoheader">Info</h2>
+        
+        <ul class="info-beskrivelse1">
           
+          <li> Der er både mulighed for behandling hjemme hos mig og i dit eget
+            hjem.</li>
+            <li>Hunden må ikke gå til træning 48 timer efter behandling. </li>
+            <li>Er din hund blevet opereret indenfor de sidste 2 måneder skal dyrlægen give grønt lys inden behandling. </li>
+            <li>Har din hund kræft må han/hun ikke få behandling. </li>
+            <li>Hunden må ikke gå til træning 48 timer efter behandling. </li>
+        </ul>
+      <h2 id="hpinfo" class="hp-info">Info for hundepasning</h2>
+      <ul class="info-beskrivelse2">
+        <li> Den første gang din hund bliver passet, skal din hund have sit tæppet/kurv med og sin yndlinges godbidder.</li>
+          <li>Efter min vurdering har jeg til enhver ret til afvise hund til pasning.</li>
+          <li>Er din hund passet fast her, hvis din hunds adfærd ændrer sig til uhensigtsmæssigt, har jeg til enhver tid opsige hund til pasning her. </li>
+          <li>Er din hund tidligere passet her, og blev opsagt på et tidspunkt, er velkommen til indkøringsprøve igen. </li>
+          <li>Tæver i løbetid anbefales at blive hjemme, halvanden uger op til løbetid og halvanden uger efter endt løbetid. </li>
+      </ul>
+
+      </div>
+    </section>
+   
+    
+    
     <script>
       const mobileBtn = document.getElementById("mobile-cta");
       nav = document.querySelector("nav");
