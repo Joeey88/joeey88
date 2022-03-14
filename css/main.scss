@@ -157,23 +157,24 @@ ul {
       margin-top: 2em;
 
       margin-left: 3em;
-
+      margin-right: 20px;
       position: relative;
-      font-size: 2.5vmin;
+      font-size: 2.2vmax;
       font-weight: bold;
 
       &:before {
         content: "";
         left: -6em;
         position: absolute;
-        width: 26px;
-        height: 26px;
+        width: 1.2em;
+        height: 1.2em;
         background-image: url("../images/dog-paw-svgrepo-com.svg");
-        background-size: contain;
+        
         margin-left: 3em;
-
+       
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(82deg)
           brightness(105%) contrast(105%);
+          
       }
     }
   }
@@ -188,7 +189,7 @@ ul {
     cite {
       color: var(--White-color);
       margin-inline-start: 20px;
-      font-size: 4vmin;
+      font-size: 2vmax;
     }
     img {
       float: left;
@@ -198,9 +199,10 @@ ul {
     }
     blockquote {
       color: #5598cb;
-      font-size: 3vmin;
+      font-size: 2vmax;
       padding-left: 1em;
       display: flex;
+      margin-right: 3em;
     }
   }
 }
