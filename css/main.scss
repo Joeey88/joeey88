@@ -1,3 +1,13 @@
+/*Mest brugte tags
+–font-size og font-weight - Skriftstørrelse og “vægt” (fed skrift)
+–Margin afstand udenfor et element, brugt til at skabe afstand mellem alle elementer
+–padding afstand indeni et element f.eks brugt til navigations-baren for at skuffe “knapperne ind på midten af baren
+–color farven på tekst eller bagrund eller lignende 
+–Border-radius laver bløde kanter f.eks. på billeder og knapper
+– float brugt til at få elementer til at placere sig ved siden af hinanden
+–display brugt til at lave grids, skjule eller vise elementer, eller placere ting med flex f.eks. navigations-baren */
+
+
 /*root gør det nemt at skifte farven på alt der er grønt på en gang*/
 :root {
   --primary-color: #7aa04c;
@@ -97,16 +107,18 @@ ul {
   text-align: left;
 
   .hero-img {
-    width: 180px;
+    width: 200px;
     height: auto;
     float: right;
     border-radius: 20em;
+    margin-top: -5em;
   }
   .cta-tekst {
     font-size: 1.3em;
     margin-top: 7em;
     font-weight: bold;
     margin-bottom: 1.5em;
+    margin-right: 40vw;
 
     color: rgb(236, 242, 255);
   }
@@ -132,14 +144,14 @@ ul {
 
   .behandling-head {
     margin: 5%;
-    padding-top: 4em;
+    padding-top: 10em;
     text-align: left;
     font-weight: bold;
     font-size: 1.8em;
   }
 
   ul {
-    display: flexbox;
+    display: flex;
     flex-wrap: wrap;
     margin-top: 3em;
     margin-bottom: 3em;
@@ -159,7 +171,7 @@ ul {
       margin-left: 3em;
       margin-right: 20px;
       position: relative;
-      font-size: 2.2vmax;
+      font-size: 1.8vmax;
       font-weight: bold;
 
       &:before {
@@ -169,12 +181,11 @@ ul {
         width: 1.2em;
         height: 1.2em;
         background-image: url("../images/dog-paw-svgrepo-com.svg");
-        
+
         margin-left: 3em;
-       
+
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(82deg)
           brightness(105%) contrast(105%);
-          
       }
     }
   }
@@ -270,8 +281,8 @@ nav.menu-btn {
     }
     .hero-img {
       height: auto;
-      width: 230px;
-      margin-top: -4em;
+      width: 330px;
+      margin-top: -9em;
     }
   }
   .behandling-info .container {
@@ -338,8 +349,8 @@ nav.menu-btn {
   .hero-cta {
     .hero-img {
       height: auto;
-      width: 280px;
-      margin-top: -4em;
+      width: 380px;
+      margin-top: -14em;
     }
   }
 }
@@ -402,8 +413,8 @@ nav.menu-btn {
     }
     .hero-img {
       height: auto;
-      width: 400px;
-      margin-top: -7em;
+      width: 460px;
+      margin-top: -15em;
     }
   }
   .behandling-info .container {
@@ -423,6 +434,7 @@ nav.menu-btn {
     .beskrivelse {
       font-size: 1.6em;
       text-align: left;
+      margin-right: 39vmax;
     }
     .info-kst,
     .info-hp {
@@ -432,6 +444,7 @@ nav.menu-btn {
   .hero-cta {
     .cta-tekst {
       font-size: 2em;
+    
     }
     .maila {
       font-size: 1.9em;
@@ -439,8 +452,8 @@ nav.menu-btn {
     .hero-img {
       height: auto;
       float: right;
-      width: 500px;
-      margin-top: -16em;
+      width: 580px;
+      margin-top: -25em;
     }
   }
   .behandling-info .container {
@@ -450,13 +463,6 @@ nav.menu-btn {
     }
   }
 }
-
-
-
-
-
-
-
 
 //behandling
 
@@ -510,14 +516,6 @@ nav.menu-btn {
     display: none;
   }
 }
-
-
-
-
-
-
-
-
 
 //HUNDEPASNING SIDE
 
@@ -628,15 +626,6 @@ nav.menu-btn {
   }
 }
 
-
-
-
-
-
-
-
-
-
 //priser og info side
 
 .priser-main {
@@ -644,67 +633,65 @@ nav.menu-btn {
   text-align: left;
   margin: auto;
   width: 90%;
-  .col{
-  h1 {
-    margin-top: 3em;
-    font-size: 3.2vmax;
-    color: var(--White-color);
-  }
-  .priserher {
-    font-size: 2vmax;
-    text-decoration: none;
-    text-transform: none;
-    color: black;
-    font-weight: bold;
-    margin-left: 0.7em;
-    background: #7aa04c;
-    padding: 0.5em;
-   
-    border-radius: 50px;
+  .col {
+    h1 {
+      margin-top: 3em;
+      font-size: 3.2vmax;
+      color: var(--White-color);
+    }
+    .priserher {
+      font-size: 2vmax;
+      text-decoration: none;
+      text-transform: none;
+      color: black;
+      font-weight: bold;
+      margin-left: 0.7em;
+      background: #7aa04c;
+      padding: 0.5em;
 
-    img {
-      vertical-align: text-bottom;
+      border-radius: 50px;
 
-      margin-left: 0.5em;
-      margin-top: 20px;
-      filter: invert(59%) sepia(15%) saturate(1151%) hue-rotate(45deg)
-        brightness(95%) contrast(96%);
+      img {
+        vertical-align: text-bottom;
+
+        margin-left: 0.5em;
+        margin-top: 20px;
+        filter: invert(59%) sepia(15%) saturate(1151%) hue-rotate(45deg)
+          brightness(95%) contrast(96%);
+      }
     }
   }
 }
-}
-.prisliste{
+.prisliste {
   margin-top: 3em;
   .column {
     float: left;
-    
+
     width: 100%;
     height: auto;
     padding: 10px;
-    .lastcard{
+    .lastcard {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    padding: 16px;
-    text-align: center;
-    background-color: var(--White-color);
-    border-radius: 25px;
-    margin-bottom: 4em;
+      padding: 16px;
+      text-align: center;
+      background-color: var(--White-color);
+      border-radius: 25px;
+      margin-bottom: 4em;
     }
   }
 
   // Remove extra left and right margins, due to padding in columns
   .row {
     margin: 0 -8px;
-    
   }
 
-  // Style the counter cards 
+  // Style the counter cards
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 16px;
     text-align: center;
     background-color: var(--White-color);
     border-radius: 25px;
-   
   }
   h3 {
     font-weight: bold;
@@ -727,44 +714,37 @@ nav.menu-btn {
     .row {
       display: grid;
       grid-template-columns: 50% 50%;
-      
     }
     .card {
       margin: 1em;
-     
     }
-    
   }
 }
-.info-behandling{
+.info-behandling {
   box-sizing: border-box;
   text-align: left;
   margin: auto;
   width: 90%;
-  .infoheader, .hp-info{
-  margin-top: 2em;
-  font-size: 3.2vmax;
-  color: var(--White-color);
+  .infoheader,
+  .hp-info {
+    margin-top: 2em;
+    font-size: 3.2vmax;
+    color: var(--White-color);
+  }
+  .info-beskrivelse1 {
+    color: #5598cb;
+    font-size: 1.8vmax;
+    margin-top: 2.8vmax;
+  }
+  .info-beskrivelse2 {
+    color: #5598cb;
+    font-size: 1.8vmax;
+    margin-top: 2.8vmax;
+    margin-bottom: 6em;
+  }
 }
-.info-beskrivelse1{
-  color: #5598cb;
-  font-size: 1.8vmax;
-  margin-top: 2.8vmax;
-}
-.info-beskrivelse2{
-  color: #5598cb;
-  font-size: 1.8vmax;
-  margin-top: 2.8vmax;
-  margin-bottom: 6em;
-}
-}
-  
-  
-  /* Responsive columns - one column layout (vertical) on small screens */
-  
 
-
-
+/* Responsive columns - one column layout (vertical) on small screens */
 
 //HUNDEPASNING SCALING
 

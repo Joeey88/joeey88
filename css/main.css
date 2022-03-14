@@ -1,4 +1,12 @@
 @charset "UTF-8";
+/*Mest brugte tags
+–font-size og font-weight - Skriftstørrelse og “vægt” (fed skrift)
+–Margin afstand udenfor et element, brugt til at skabe afstand mellem alle elementer
+–padding afstand indeni et element f.eks brugt til navigations-baren for at skuffe “knapperne ind på midten af baren
+–color farven på tekst eller bagrund eller lignende 
+–Border-radius laver bløde kanter f.eks. på billeder og knapper
+– float brugt til at få elementer til at placere sig ved siden af hinanden
+–display brugt til at lave grids, skjule eller vise elementer, eller placere ting med flex f.eks. navigations-baren */
 /*root gør det nemt at skifte farven på alt der er grønt på en gang*/
 :root {
   --primary-color: #7aa04c;
@@ -101,10 +109,11 @@ ul {
 }
 
 .hero-cta .hero-img {
-  width: 180px;
+  width: 200px;
   height: auto;
   float: right;
   border-radius: 20em;
+  margin-top: -5em;
 }
 
 .hero-cta .cta-tekst {
@@ -112,6 +121,7 @@ ul {
   margin-top: 7em;
   font-weight: bold;
   margin-bottom: 1.5em;
+  margin-right: 40vw;
   color: #ecf2ff;
 }
 
@@ -135,14 +145,16 @@ ul {
 
 .behandling-info .container .behandling-head {
   margin: 5%;
-  padding-top: 4em;
+  padding-top: 10em;
   text-align: left;
   font-weight: bold;
   font-size: 1.8em;
 }
 
 .behandling-info .container ul {
-  display: flexbox;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 3em;
@@ -167,7 +179,7 @@ ul {
   margin-left: 3em;
   margin-right: 20px;
   position: relative;
-  font-size: 2.2vmax;
+  font-size: 1.8vmax;
   font-weight: bold;
 }
 
@@ -289,8 +301,8 @@ nav.menu-btn {
   }
   .hero-cta .hero-img {
     height: auto;
-    width: 230px;
-    margin-top: -4em;
+    width: 330px;
+    margin-top: -9em;
   }
   .behandling-info .container {
     text-align: left;
@@ -360,8 +372,8 @@ nav.menu-btn {
   }
   .hero-cta .hero-img {
     height: auto;
-    width: 280px;
-    margin-top: -4em;
+    width: 380px;
+    margin-top: -14em;
   }
 }
 
@@ -419,8 +431,8 @@ nav.menu-btn {
   }
   .hero-cta .hero-img {
     height: auto;
-    width: 400px;
-    margin-top: -7em;
+    width: 460px;
+    margin-top: -15em;
   }
   .behandling-info .container {
     text-align: left;
@@ -441,6 +453,7 @@ nav.menu-btn {
   .hero .beskrivelse {
     font-size: 1.6em;
     text-align: left;
+    margin-right: 39vmax;
   }
   .hero .info-kst,
   .hero .info-hp {
@@ -455,8 +468,8 @@ nav.menu-btn {
   .hero-cta .hero-img {
     height: auto;
     float: right;
-    width: 500px;
-    margin-top: -16em;
+    width: 580px;
+    margin-top: -25em;
   }
   .behandling-info .container {
     text-align: left;
@@ -727,7 +740,8 @@ nav.menu-btn {
   width: 90%;
 }
 
-.info-behandling .infoheader, .info-behandling .hp-info {
+.info-behandling .infoheader,
+.info-behandling .hp-info {
   margin-top: 2em;
   font-size: 3.2vmax;
   color: var(--White-color);
