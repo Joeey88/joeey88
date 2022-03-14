@@ -629,8 +629,17 @@ nav.menu-btn {
 }
 
 .priser-main .priserher {
-  color: var(--primary-color);
-  font-size: 1.7vmax;
+  font-size: 1.5em;
+  text-decoration: none;
+  text-transform: none;
+  color: black;
+  font-weight: bold;
+  margin-left: 0.7em;
+  background: #7aa04c;
+  padding: 0.5em;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  border-radius: 50px;
 }
 
 .priser-main .priserher img {
@@ -661,6 +670,7 @@ nav.menu-btn {
 
 .priser-main .column {
   float: left;
+  margin-top: 3em;
   width: 100%;
   height: auto;
   padding: 10px;
@@ -676,8 +686,28 @@ nav.menu-btn {
   /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: var(--White-color);
   border-radius: 25px;
+}
+
+.priser-main h3 {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.priser-main .p2 {
+  font-size: 1.5em;
+  font-style: italic;
+  margin-top: -25px;
+}
+
+.priser-main p {
+  font-size: 2em;
+}
+
+.priser-main p span {
+  font-weight: bold;
+  font-size: 1em;
 }
 
 @media only screen and (min-width: 800px) {

@@ -642,8 +642,17 @@ nav.menu-btn {
     color: var(--White-color);
   }
   .priserher{
-    color: var(--primary-color);
-    font-size: 1.7vmax;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: none;
+    color: black;
+    font-weight: bold;
+margin-left: 0.7em;
+    background: #7aa04c;
+    padding: 0.5em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    border-radius: 50px;
 
     img {
       vertical-align: text-bottom;
@@ -674,7 +683,7 @@ nav.menu-btn {
  
   .column {
     float: left;
-    
+    margin-top: 3em;
     width: 100%;
     height: auto;
     padding: 10px;
@@ -695,9 +704,31 @@ nav.menu-btn {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 16px;
     text-align: center;
-    background-color: #f1f1f1;
+    background-color: var(--White-color);
     border-radius: 25px;
   }
+  h3{
+    font-weight: bold;
+    font-size: 2em;
+   }
+    
+   .p2{
+    font-size: 1.5em;
+    font-style: italic;
+    margin-top: -25px;
+  }
+  p{
+   
+    font-size: 2em;
+    span{
+      
+      font-weight: bold;
+      font-size: 1em;
+     
+    }
+    
+  }
+ 
   
   /* Responsive columns - one column layout (vertical) on small screens */
   @media only screen and(min-width: 800px){
