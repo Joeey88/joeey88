@@ -630,12 +630,13 @@ nav.menu-btn {
 
 .priser-main {
   box-sizing: border-box;
-  text-align: left;
+  text-align: center;
   margin: auto;
   width: 90%;
   .col {
     h1 {
-      margin-top: 3em;
+      margin-top:  3em;
+      margin-bottom: 3em;
       font-size: 3.2vmax;
       color: var(--White-color);
     }
@@ -645,20 +646,13 @@ nav.menu-btn {
       text-transform: none;
       color: black;
       font-weight: bold;
-      margin-left: 0.7em;
+    
       background: #7aa04c;
       padding: 0.5em;
 
       border-radius: 50px;
 
-      img {
-        vertical-align: text-bottom;
-
-        margin-left: 0.5em;
-        margin-top: 20px;
-        filter: invert(59%) sepia(15%) saturate(1151%) hue-rotate(45deg)
-          brightness(95%) contrast(96%);
-      }
+     
     }
   }
 }
@@ -670,19 +664,12 @@ nav.menu-btn {
     width: 100%;
     height: auto;
     padding: 10px;
-    .lastcard {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-      padding: 16px;
-      text-align: center;
-      background-color: var(--White-color);
-      border-radius: 25px;
-      margin-bottom: 4em;
-    }
+    
   }
 
   // Remove extra left and right margins, due to padding in columns
   .row {
-    margin: 0 -8px;
+    margin: 4em 2em;
   }
 
   // Style the counter cards
@@ -692,30 +679,58 @@ nav.menu-btn {
     text-align: center;
     background-color: var(--White-color);
     border-radius: 25px;
-  }
-  h3 {
-    font-weight: bold;
-    font-size: 4vmin;
-  }
-
-  .p2 {
-    font-size: 3vmin;
-    font-style: italic;
-    margin-top: -20px;
-  }
-  p {
-    font-size: 4vmin;
-    span {
+    width: 35vmax;
+    height: 16vmax;
+     h3 {
+    
       font-weight: bold;
-      font-size: 1em;
+      font-size: 2vmax;
+    }
+  
+ 
+    p {
+      font-size: 2vmax;
+      span {
+        font-weight: bold;
+        font-size: 1em;
+      }
     }
   }
+  .card1{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: var(--White-color);
+  border-radius: 25px;
+    margin-bottom: 5em;
+    width: 35vmax;
+    height: 16vmax;
+    h3 {
+    
+      font-weight: bold;
+      font-size: 2vmax;
+    }
+  
+    .p2 {
+      font-size: 1.3vmax;
+      font-style: italic;
+      margin-top: -1.6em;
+    }
+    p {
+      font-size: 2vmax;
+      span {
+        font-weight: bold;
+        font-size: 1em;
+      }
+    }
+  }
+ 
   @media only screen and(min-width: 850px) {
     .row {
       display: grid;
       grid-template-columns: 50% 50%;
     }
-    .card {
+    .card, .card1 {
       margin: 1em;
     }
   }
@@ -726,6 +741,7 @@ nav.menu-btn {
   margin: auto;
   width: 90%;
   .infoheader,
+ 
   .hp-info {
     margin-top: 2em;
     font-size: 3.2vmax;

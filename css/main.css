@@ -633,13 +633,14 @@ nav.menu-btn {
 .priser-main {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  text-align: left;
+  text-align: center;
   margin: auto;
   width: 90%;
 }
 
 .priser-main .col h1 {
   margin-top: 3em;
+  margin-bottom: 3em;
   font-size: 3.2vmax;
   color: var(--White-color);
 }
@@ -650,18 +651,9 @@ nav.menu-btn {
   text-transform: none;
   color: black;
   font-weight: bold;
-  margin-left: 0.7em;
   background: #7aa04c;
   padding: 0.5em;
   border-radius: 50px;
-}
-
-.priser-main .col .priserher img {
-  vertical-align: text-bottom;
-  margin-left: 0.5em;
-  margin-top: 20px;
-  -webkit-filter: invert(59%) sepia(15%) saturate(1151%) hue-rotate(45deg) brightness(95%) contrast(96%);
-          filter: invert(59%) sepia(15%) saturate(1151%) hue-rotate(45deg) brightness(95%) contrast(96%);
 }
 
 .prisliste {
@@ -675,19 +667,8 @@ nav.menu-btn {
   padding: 10px;
 }
 
-.prisliste .column .lastcard {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  /* this adds the "card" effect */
-  padding: 16px;
-  text-align: center;
-  background-color: var(--White-color);
-  border-radius: 25px;
-  margin-bottom: 4em;
-}
-
 .prisliste .row {
-  margin: 0 -8px;
+  margin: 4em 2em;
 }
 
 .prisliste .card {
@@ -698,24 +679,53 @@ nav.menu-btn {
   text-align: center;
   background-color: var(--White-color);
   border-radius: 25px;
+  width: 35vmax;
+  height: 16vmax;
 }
 
-.prisliste h3 {
+.prisliste .card h3 {
   font-weight: bold;
-  font-size: 4vmin;
+  font-size: 2vmax;
 }
 
-.prisliste .p2 {
-  font-size: 3vmin;
+.prisliste .card p {
+  font-size: 2vmax;
+}
+
+.prisliste .card p span {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.prisliste .card1 {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: var(--White-color);
+  border-radius: 25px;
+  margin-bottom: 5em;
+  width: 35vmax;
+  height: 16vmax;
+}
+
+.prisliste .card1 h3 {
+  font-weight: bold;
+  font-size: 2vmax;
+}
+
+.prisliste .card1 .p2 {
+  font-size: 1.3vmax;
   font-style: italic;
-  margin-top: -20px;
+  margin-top: -1.6em;
 }
 
-.prisliste p {
-  font-size: 4vmin;
+.prisliste .card1 p {
+  font-size: 2vmax;
 }
 
-.prisliste p span {
+.prisliste .card1 p span {
   font-weight: bold;
   font-size: 1em;
 }
@@ -727,7 +737,7 @@ nav.menu-btn {
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
   }
-  .prisliste .card {
+  .prisliste .card, .prisliste .card1 {
     margin: 1em;
   }
 }
