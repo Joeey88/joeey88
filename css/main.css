@@ -661,7 +661,6 @@ nav.menu-btn {
 }
 
 .prisliste .column {
-  float: left;
   width: 100%;
   height: auto;
   padding: 10px;
@@ -679,8 +678,8 @@ nav.menu-btn {
   text-align: center;
   background-color: var(--White-color);
   border-radius: 25px;
-  width: 35vmax;
-  height: 16vmax;
+  width: auto;
+  height: 15vmax;
 }
 
 .prisliste .card h3 {
@@ -706,8 +705,8 @@ nav.menu-btn {
   background-color: var(--White-color);
   border-radius: 25px;
   margin-bottom: 5em;
-  width: 35vmax;
-  height: 16vmax;
+  width: auto;
+  height: 15vmax;
 }
 
 .prisliste .card1 h3 {

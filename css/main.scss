@@ -659,7 +659,7 @@ nav.menu-btn {
 .prisliste {
   margin-top: 3em;
   .column {
-    float: left;
+  
 
     width: 100%;
     height: auto;
@@ -670,6 +670,7 @@ nav.menu-btn {
   // Remove extra left and right margins, due to padding in columns
   .row {
     margin: 4em 2em;
+   
   }
 
   // Style the counter cards
@@ -679,8 +680,9 @@ nav.menu-btn {
     text-align: center;
     background-color: var(--White-color);
     border-radius: 25px;
-    width: 35vmax;
-    height: 16vmax;
+    width: auto;
+    height: 15vmax;
+    
      h3 {
     
       font-weight: bold;
@@ -703,8 +705,8 @@ nav.menu-btn {
   background-color: var(--White-color);
   border-radius: 25px;
     margin-bottom: 5em;
-    width: 35vmax;
-    height: 16vmax;
+    width: auto;
+    height: 15vmax;
     h3 {
     
       font-weight: bold;
@@ -728,11 +730,12 @@ nav.menu-btn {
   @media only screen and(min-width: 850px) {
     .row {
       display: grid;
+      
       grid-template-columns: 50% 50%;
     }
-    .card, .card1 {
-      margin: 1em;
-    }
+   .card, .card1{
+     margin: 1em;
+   }
   }
 }
 .info-behandling {
